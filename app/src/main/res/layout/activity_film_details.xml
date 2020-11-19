@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.FilmDetailsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_film_details"
+            android:layout_width="match_parent"
+            app:title=""
+            android:layout_height="?attr/actionBarSize" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@android:color/black"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/valueProducer" />
+
+            <TextView
+                android:id="@+id/valueName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:textColor="@android:color/white"
+                android:textSize="32sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="A new hope" />
+
+            <TextView
+                android:id="@+id/textReleaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/valueName"
+                android:text="@string/film_release_note" />
+
+            <TextView
+                android:id="@+id/valueReleaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textReleaseDate"
+                tools:text="1977/05/25" />
+
+            <TextView
+                android:id="@+id/textDirector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@id/textReleaseDate"
+                app:layout_constraintTop_toBottomOf="@id/valueName"
+                android:text="@string/film_director" />
+
+            <TextView
+                android:id="@+id/valueDirector"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="16dp"
+                app:layout_constraintStart_toEndOf="@id/textReleaseDate"
+                app:layout_constraintTop_toBottomOf="@id/textDirector"
+                tools:text="George Lucas" />
+
+            <TextView
+                android:id="@+id/textProducer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/film_producer"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                app:layout_constraintStart_toEndOf="@id/valueDirector"
+                app:layout_constraintTop_toBottomOf="@id/valueName" />
+
+            <TextView
+                android:id="@+id/valueProducer"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:paddingBottom="24dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/valueDirector"
+                app:layout_constraintTop_toBottomOf="@+id/textProducer"
+                tools:text="Gary Kurtz, Rick McCallum" />
+
+            <TextView
+                android:id="@+id/textOpeningCraw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view"
+                android:textSize="12sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/film_opening_craw" />
+
+            <TextView
+                android:id="@+id/valueOpeningCraw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textOpeningCraw"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                tools:text="Cupcake ipsum dolor sit amet sweet muffin. Sweet roll pastry gingerbread sesame snaps gingerbread. Muffin bonbon chocolate cake icing donut tootsie roll cookie muffin. Chupa chups gummies danish soufflé croissant croissant jelly-o caramels pie. Carrot cake fruitcake candy gingerbread sweet roll gummies danish. Jelly beans cheesecake biscuit donut soufflé soufflé wafer. Lemon drops jelly chocolate cake danish croissant tart muffin cake. Caramels jujubes tart cookie sweet gummies bear claw halvah. Biscuit donut donut donut candy dessert brownie fruitcake cupcake. Chupa chups lollipop oat cake. Cake sugar plum tootsie roll lollipop bear claw. Soufflé cupcake gummies brownie jujubes cotton candy gummies." />
+
+            <TextView
+                android:id="@+id/textCreated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/valueOpeningCraw"
+                android:textSize="12sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/film_created" />
+
+            <TextView
+                android:id="@+id/valueCreated"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textCreated"
+                android:layout_marginStart="16dp"
+                tools:text="2014/2/10" />
+
+            <TextView
+                android:id="@+id/textEdited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/valueCreated"
+                app:layout_constraintTop_toBottomOf="@id/valueOpeningCraw"
+                android:textSize="12sp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:text="@string/film_edited" />
+
+            <TextView
+                android:id="@+id/valueEdited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/textEdited"
+                app:layout_constraintTop_toBottomOf="@+id/textEdited"
+                tools:text="2014/2/10" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

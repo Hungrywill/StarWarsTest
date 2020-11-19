@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">StarWarsTest</string>
+    <string name="no_network_connectivity">No Network Connectivity</string>
+
+    <string name="films_title">Think-it Star Wars</string>
+    <plurals name="film_total_movies">
+        <item quantity="one">Total %d Movie</item>
+        <item quantity="other">Total %d Movies</item>
+    </plurals>
+    <string name="film_release_note">Release note</string>
+    <string name="film_director">Director</string>
+    <string name="film_producer">Producer</string>
+    <string name="film_opening_craw">opening craw</string>
+    <string name="film_created">Created</string>
+    <string name="film_edited">Edited</string>
+
+</resources>

@@ -2,14 +2,16 @@ package com.test.starwarstest.ui
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.test.starwarstest.R
-import com.test.starwarstest.ui.adapters.FilmsAdapter
+import com.test.starwarstest.adapters.FilmsAdapter
 import com.test.starwarstest.utils.EXTRA_POSITION
-import com.test.starwarstest.ui.viewmodels.FilmsViewModel
+import com.test.starwarstest.viewmodels.FilmsViewModel
+import kotlinx.android.synthetic.main.activity_film_details.*
 import kotlinx.android.synthetic.main.activity_films.*
 import org.koin.android.viewmodel.ext.android.viewModel
 

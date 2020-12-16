@@ -6,9 +6,9 @@ import retrofit2.Retrofit
 
 val apiModule = module {
 
-    fun provideCountriesApi(retrofit: Retrofit): FilmsApi {
+    fun provideFilmsApi(retrofit: Retrofit): FilmsApi {
         return retrofit.create(FilmsApi::class.java)
     }
-    single { provideCountriesApi(get()) }
+    single { provideFilmsApi(get()) }
 
 }

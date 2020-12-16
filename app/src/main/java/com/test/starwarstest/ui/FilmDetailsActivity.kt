@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
 import com.test.starwarstest.R
 import com.test.starwarstest.utils.*
-import com.test.starwarstest.viewmodels.FilmsViewModel
+import com.test.starwarstest.ui.viewmodels.FilmsViewModel
 import kotlinx.android.synthetic.main.activity_film_details.*
 import org.koin.android.viewmodel.ext.android.viewModel
 

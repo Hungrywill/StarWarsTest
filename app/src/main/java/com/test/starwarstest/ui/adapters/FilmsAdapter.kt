@@ -1,4 +1,4 @@
-package com.test.starwarstest.adapters
+package com.test.starwarstest.ui.adapters
 
 import android.view.LayoutInflater
 import android.view.View

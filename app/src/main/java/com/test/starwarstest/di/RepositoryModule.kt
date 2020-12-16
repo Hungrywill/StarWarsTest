@@ -9,9 +9,9 @@ import org.koin.dsl.module
 
 val repositoryModule = module {
 
-    fun provideCountryRepository(api: FilmsApi, context: Context): FilmsRepository {
+    fun provideFilmsRepository(api: FilmsApi, context: Context): FilmsRepository {
         return FilmsRepositoryImpl(api, context)
     }
-    single { provideCountryRepository(get(), androidContext()) }
+    single { provideFilmsRepository(get(), androidContext()) }
 
 }

@@ -1,4 +1,4 @@
-package com.test.starwarstest.viewmodels
+package com.test.starwarstest.ui.viewmodels
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData

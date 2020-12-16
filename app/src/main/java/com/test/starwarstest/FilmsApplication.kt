@@ -1,4 +1,4 @@
-package com.test.starwarstest.core
+package com.test.starwarstest
 
 import android.app.Application
 import com.test.starwarstest.di.apiModule
